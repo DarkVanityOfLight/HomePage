@@ -10,6 +10,11 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
   declarations: [StartComponent, AboutMeComponent, ContactMeComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    StartComponent,
+    ContactMeComponent,
+    AboutMeComponent,
   ]
 })
 export class SitesModule { }
