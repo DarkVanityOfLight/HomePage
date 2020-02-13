@@ -19,9 +19,6 @@ export class QuoteComponent implements OnInit {
     alert(this.imgProperties[3] + ' ' + this.imgProperties[4]);
   }
 
-
-
-
   getImgProperties(): void {
     const img = new Image();
     img.onload = () => {
