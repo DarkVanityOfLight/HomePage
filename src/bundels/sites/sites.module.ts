@@ -16,6 +16,7 @@ import { QuoteComponent } from './start/quote/quote.component';
     StartComponent,
     ContactMeComponent,
     AboutMeComponent,
+    QuoteComponent
   ]
 })
 export class SitesModule { }
