@@ -6,10 +6,10 @@ import { ContactMeComponent } from 'src/bundels/sites/contact-me/contact-me.comp
 
 
 const routes: Routes = [
-  { path: "", component: StartComponent },
-  { path: "Start", component: StartComponent },
-  { path: "AboutMe", component: AboutMeComponent},
-  { path: "ContactMe", component: ContactMeComponent }
+  { path: '', component: StartComponent },
+  { path: 'Start', component: StartComponent },
+  { path: 'AboutMe', component: AboutMeComponent},
+  { path: 'ContactMe', component: ContactMeComponent }
 ];
 
 @NgModule({

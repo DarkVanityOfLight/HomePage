@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./link-button.component.styl']
 })
 export class LinkButtonComponent implements OnInit {
-  @Input() link:string;
-  @Input() title:string;
+  @Input() link: string;
+  @Input() title: string;
 
   constructor() { }
 

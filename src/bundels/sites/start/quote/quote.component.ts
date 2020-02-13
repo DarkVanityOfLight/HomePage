@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuoteComponent implements OnInit {
   @Input() bgPath: string;
   @Input() quote: string;
+
   imgProperties: number[];
 
   constructor() { }
@@ -15,18 +16,18 @@ export class QuoteComponent implements OnInit {
   ngOnInit(): void {
     this.imgProperties[3] = document.documentElement.clientWidth;
     this.imgProperties[4] = document.documentElement.clientHeight;
-    alert(this.imgProperties[3] + " " +this.imgProperties[4])
+    alert(this.imgProperties[3] + ' ' + this.imgProperties[4]);
   }
 
 
 
 
-  getImgProperties(): void{
+  getImgProperties(): void {
     const img = new Image();
     img.onload = () => {
       this.imgProperties[0] = img.width;
       this.imgProperties[1] = img.height;
-    }
+    };
     img.src = this.bgPath;
   }
 
