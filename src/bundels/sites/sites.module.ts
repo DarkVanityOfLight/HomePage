@@ -11,8 +11,9 @@ import { QuoteComponent } from './quote/quote.component';
   declarations: [
     StartComponent,
     AboutMeComponent, 
-    ContactMeComponent, 
+    ContactMeComponent,
     QuoteComponent],
+
   imports: [
     CommonModule
   ],
