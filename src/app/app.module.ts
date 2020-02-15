@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonThingsModule } from '../bundels/common/common-things.module';
+import { SitesModule } from '../bundels/sites/sites.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CommonThingsModule } from '../bundels/common/common-things.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonThingsModule
+    CommonThingsModule,
+    SitesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

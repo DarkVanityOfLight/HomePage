@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StartComponent } from './start/start.component';
+
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { StartComponent } from './start/start.component';
 import { QuoteComponent } from './quote/quote.component';
-
 
 
 @NgModule({
   declarations: [
-    StartComponent,
     AboutMeComponent, 
-    ContactMeComponent,
-    QuoteComponent],
+    ContactMeComponent, 
+    StartComponent,
+    QuoteComponent
+  ],
 
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
-    StartComponent,
     ContactMeComponent,
     AboutMeComponent,
+    StartComponent,
   ]
 })
 export class SitesModule { }
