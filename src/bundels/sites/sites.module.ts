@@ -5,6 +5,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { StartComponent } from './start/start.component';
 import { QuoteComponent } from './quote/quote.component';
+import { SkillComponent } from './skill/skill.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { QuoteComponent } from './quote/quote.component';
     AboutMeComponent, 
     ContactMeComponent, 
     StartComponent,
-    QuoteComponent
+    QuoteComponent,
+    SkillComponent
   ],
 
   imports: [
