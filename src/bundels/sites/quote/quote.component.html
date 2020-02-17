@@ -1,1 +1,7 @@
-<p>quote works!</p>
+<div class="quote-container" [ngStyle]="{'min-width': imgWidth+'px'}">
+    <div class="background-container" [ngStyle]="{'background-image': 'url('+bgPath+')','height': imgHeight+'px'}"> 
+        <div class="quote-text-container">
+            <p>{{ quote }}</p>
+        </div>
+    </div>
+</div> 
