@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start.component.styl']
 })
 export class StartComponent implements OnInit {
+  skillHidden: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.skillHidden = true;
+  }
+
+  toggleHidden(){
+    this.skillHidden = !this.skillHidden;
   }
 
 }
