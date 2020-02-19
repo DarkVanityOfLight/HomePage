@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
 import { SkillService } from 'src/services/skill/skill.service';
+import { ProjectService } from 'src/services/project/project.service';
+
 import { SkillModel } from 'src/models/skill';
+import { ProjectModel } from 'src/models/projekt';
 
 @Component({
   selector: 'app-start',
@@ -9,21 +13,28 @@ import { SkillModel } from 'src/models/skill';
 })
 export class StartComponent implements OnInit {
   skillHidden: boolean;
+  projectHidden: boolean;
   SKILLS: SkillModel[];
+  PROJECTS: ProjectModel[];
 
   constructor(private skillService: SkillService) { }
 
   ngOnInit(): void {
     this.skillHidden = true;
+    this.projectHidden = true;
   }
 
-  toggleHidden(){
+  toggleHiddenSkill() {
     this.skillHidden = !this.skillHidden;
   }
 
-  getSkills(){
+  toggleHiddenProject() {
+    this.projectHidden = !this.projectHidden;
+  }
+
+  getSkills() {
     this.skillService.SKILLS.subscribe(
-      data => this.SKILLS = data);;
+      data => this.SKILLS = data);
 
   }
 }
