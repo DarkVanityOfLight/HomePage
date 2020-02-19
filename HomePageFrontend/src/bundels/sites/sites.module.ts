@@ -7,6 +7,7 @@ import { StartComponent } from './start/start.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SkillComponent } from './skill/skill.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactMeComponent, 
     StartComponent,
     QuoteComponent,
-    SkillComponent
+    SkillComponent,
+    ProjectComponent
   ],
 
   imports: [
