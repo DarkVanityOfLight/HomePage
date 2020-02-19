@@ -10,7 +10,6 @@ const skill = [{title: 'Skill', text: 'Text', iconLink: ''}, {title: 'Skill', te
   providedIn: 'root'
 })
 export class SkillService {
-  private _SKILLS: Observable<SkillModel[]>;
   private skillUrl: string;
   private debug: boolean;
 
