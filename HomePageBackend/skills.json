@@ -1,5 +1,6 @@
-{
-    "iconLink": "hello",
-    "title": "Hellp",
-    "text": "hello"
-}
+[
+    {
+        "iconLink": "hello",
+        "title": "Hellp",
+        "text": "hello"
+    }]

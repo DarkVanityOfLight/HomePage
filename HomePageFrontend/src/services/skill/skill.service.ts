@@ -15,7 +15,8 @@ export class SkillService {
   private debug: boolean;
 
   constructor(private http: HttpClient) {
-    this.debug = true
+    this.debug = false;
+    this.skillUrl = 'http://192.168.12.68:8000/skills';
    }
 
   get SKILLS(): Observable<SkillModel[]>{

@@ -18,7 +18,6 @@ export class StartComponent implements OnInit {
   }
 
   toggleHidden(){
-    console.log("Function called");
     this.skillHidden = !this.skillHidden;
   }
 

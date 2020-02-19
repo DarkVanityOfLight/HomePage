@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import json
 
 def getSkillInfo():
@@ -6,6 +7,7 @@ def getSkillInfo():
         return json.load(skillFile)
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/skills")
 def skillApi():
