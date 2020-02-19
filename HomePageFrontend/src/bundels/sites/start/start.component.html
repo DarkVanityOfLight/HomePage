@@ -21,7 +21,8 @@
             <p>{{ '{' }}{{ '{' }}  Projects  {{ '}' }}{{ '}' }}</p>
         </div>
         <div *ngIf="!projectHidden">
-            <div *ngFor="let project of PROJECTS">
+            <div *ngFor="let _project of PROJECTS">
+                <app-project [project]="_project"></app-project>
             </div>
         </div>
     </div>
