@@ -11,16 +11,9 @@
             <p>{{ '{' }}{{ '{' }}  Toolset  {{ '}' }}{{ '}' }}</p>
         </div>
         <div *ngIf="!skillHidden">
-            <app-skill [skill]="{
-                iconLink: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
-                title: 'Python',
-                text: 'This is my text, I wonder if it does line breaks auto'
-                }"></app-skill>
-                <app-skill [skill]="{
-                    iconLink: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
-                    title: 'Python',
-                    text: 'This is my text, I wonder if it does line breaks auto'
-                }"></app-skill>
+            <div *ngFor="let _skill of SKILLS">
+                <app-skill [skill]="_skill"></app-skill>
+            </div>
         </div>
     </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillService } from 'src/services/skill/skill.service';
+import { SkillModel } from 'src/models/skill';
 
 @Component({
   selector: 'app-start',
@@ -7,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
   skillHidden: boolean;
+  SKILLS: SkillModel[];
 
-  constructor() { }
+  constructor(private skillService: SkillService) { }
 
   ngOnInit(): void {
     this.skillHidden = true;
