@@ -1,32 +1,10 @@
 [
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    },
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    },
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    },
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    },
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    },
-    {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
-    }
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""}
 ]
