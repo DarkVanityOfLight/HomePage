@@ -6,13 +6,22 @@
         </app-quote>
     </div>
 
-    <div class="skill-super-container">
-        <div class="skill-header" (click)="toggleHidden(); getSkills()">
+    <div class="skill-outer-super-container">
+        <div class="skill-header" (click)="toggleHiddenSkill(); getSkills()">
             <p>{{ '{' }}{{ '{' }}  Toolset  {{ '}' }}{{ '}' }}</p>
         </div>
-        <div *ngIf="!skillHidden">
+        <div *ngIf="!skillHidden" class="skill-super-container">
             <div *ngFor="let _skill of SKILLS">
                 <app-skill [skill]="_skill"></app-skill>
+            </div>
+        </div>
+    </div>
+    <div class="project-super-container">
+        <div class="skill-header" (click)="toggleHiddenProject();">
+            <p>{{ '{' }}{{ '{' }}  Projects  {{ '}' }}{{ '}' }}</p>
+        </div>
+        <div *ngIf="!projectHidden">
+            <div *ngFor="let project of PROJECTS">
             </div>
         </div>
     </div>
