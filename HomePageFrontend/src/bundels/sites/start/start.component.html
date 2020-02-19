@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="project-super-container">
-        <div class="skill-header" (click)="toggleHiddenProject();">
+        <div class="skill-header" (click)="toggleHiddenProject(); getProjects()">
             <p>{{ '{' }}{{ '{' }}  Projects  {{ '}' }}{{ '}' }}</p>
         </div>
         <div *ngIf="!projectHidden">
