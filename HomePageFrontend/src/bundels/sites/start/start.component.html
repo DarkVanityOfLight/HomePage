@@ -1,0 +1,19 @@
+<div class="start-container">
+    <div class="quote-super-container">
+        <app-quote 
+        [bgPath]="'assets/img/coding.jpg'"
+        [quote]= "'Code can change the world, so can I'">
+        </app-quote>
+    </div>
+
+    <div class="skill-super-container">
+        <div class="skill-header" (click)="toggleHidden(); getSkills()">
+            <p>{{ '{' }}{{ '{' }}  Toolset  {{ '}' }}{{ '}' }}</p>
+        </div>
+        <div *ngIf="!skillHidden">
+            <div *ngFor="let _skill of SKILLS">
+                <app-skill [skill]="_skill"></app-skill>
+            </div>
+        </div>
+    </div>
+</div>
