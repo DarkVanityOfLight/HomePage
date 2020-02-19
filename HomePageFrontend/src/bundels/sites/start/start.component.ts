@@ -17,7 +17,7 @@ export class StartComponent implements OnInit {
   SKILLS: SkillModel[];
   PROJECTS: ProjectModel[];
 
-  constructor(private skillService: SkillService) { }
+  constructor(private skillService: SkillService, private projectService: ProjectService) { }
 
   ngOnInit(): void {
     this.skillHidden = true;
@@ -36,5 +36,9 @@ export class StartComponent implements OnInit {
     this.skillService.SKILLS.subscribe(
       data => this.SKILLS = data);
 
+  }
+  getProjects() {
+    this.projectService.PROJECTS.subscribe(
+      data => this.PROJECTS = data);
   }
 }
