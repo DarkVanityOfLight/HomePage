@@ -18,20 +18,18 @@ export class QuoteComponent implements OnInit {
   ngOnInit(): void {
     this.getImageProperties();
     this.getUserProperties();
-    
   }
 
-  getImageProperties(){
-    var img = new Image();
-    img.onload = () =>{
+  getImageProperties() {
+    const img = new Image();
+    img.onload = () => {
       this.imgHeight = img.height;
       this.imgWidth = img.width;
-      
-    }
+    };
     img.src = this.bgPath;
   }
 
-  getUserProperties(){
+  getUserProperties() {
     this.userWidth = window.screen.width;
     this.userHeight = window.screen.height;
   }
