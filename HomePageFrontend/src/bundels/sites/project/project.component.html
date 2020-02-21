@@ -2,7 +2,21 @@
     <div class="project-img-container">
         <img src="{{ project.imgPath }}">
     </div>
-    <div class="project-title-container">
-        <p>{{ project.title }}</p>
+    <div class="otherThings-container">
+        <div class="project-title-container">
+            <p>{{ project.title }}</p>
+        </div>
+        <div class="project-text-container">
+            <p>{{ project.text }}</p>
+        </div>
+        <div class="bottom-row">
+            <div class="tag-container">
+                <p>Tag</p>
+            </div>
+            <div class="spacer"></div>
+            <div class="project-button-container">
+                <app-link-button [title]="'GitHub'" [link]="project.githubLink"></app-link-button>
+            </div>
+        </div>
     </div>
 </div>
