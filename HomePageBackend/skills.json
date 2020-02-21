@@ -1,32 +1,47 @@
 [
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+        "title": "Python",
+        "text": "Python ist die erste Programmiersprache die ich gelernt habe, dementsprechend bin ich relativ gut darin"
     },
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+        "title": "Angular",
+        "text": "Seit einigen Monaten programmiere ich nun Angluar, das TypeScript Framework hilft mir sehr beim entwickeln von User Interfaces"
     },
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/6/67/TypeScript_Logo.svg",
+        "title": "TypeScript",
+        "text": "Im zusammenhang mit Angular habe ich TypeScript gelernt. TypeScript compiled zu JavaScript, jedoch mit einigen extra Features "
     },
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin-logo.svg",
+        "title": "Kotlin",
+        "text": "Durch Android Developing bin ich auf Kotlin gestoßen, Kotlin ist neben Python meine Lieblingssprache"
     },
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://cpng.pikpng.com/pngl/s/204-2047555_datei-java-logo-svg-java-logo-svg-clipart.png",
+        "title": "Java",
+        "text": "Vor Kotlin habe ich Java gelernt, durch Java bin ich auf Objektorientiertes Programmieren gestoßen"
     },
     {
-        "iconLink": "hello",
-        "title": "Hellp",
-        "text": "hello"
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/3/34/Android_Studio_icon.svg",
+        "title": "Android Studio",
+        "text": "Android App Development macht mir sehr viel Spaß, Android Studio und der darin enthaltene Gui Designer ist der beste den ich bisher gesehen habe"
+    },
+    {
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Stylus-logo.svg",
+        "title": "Stylus/Css",
+        "text": "Stylus ist ein Css präprozessor, natürlich kann ich auch Css, aber Stylus ist meine erste Wahl"
+    },
+    {
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+        "title": "HTML5",
+        "text": "Die Grundlage für jede moderne Website, ein muss für jeden Programmierer"
+    },
+    {
+        "iconLink": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+        "title": "Git/GitHub",
+        "text": "Das Version Controll System Git ist seit langem ein treuer Wegbegleiter von mir"
     }
 ]
