@@ -8,16 +8,35 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuoteComponent implements OnInit {
   @Input() bgPath: string;
   @Input() quote: string;
-  imgWidth: number;
-  imgHeight: number;
-  userWidth: number;
-  userHeight: number;
+  private imgWidth: number;
+  private imgHeight: number;
+  private userWidth: number;
+  private userHeight: number;
+  scaledImgHeight: number;
+  scaleRatio: number;
 
   constructor() { }
 
   ngOnInit(): void {
     this.getImageProperties();
     this.getUserProperties();
+    this.startImageResizing();
+    this.calculateNewImageHeight();
+
+  }
+
+  startImageResizing() {
+    alert(this.imgWidth)
+    alert(this.imgWidth)
+    this.scaleRatio = this.imgWidth / this.imgHeight;
+    window.onresize = () =>{
+      this.getUserProperties();
+      this.calculateNewImageHeight();
+    }
+  }
+
+  calculateNewImageHeight() {
+    this.scaledImgHeight = this.imgHeight * this.scaleRatio;
   }
 
   getImageProperties() {
