@@ -16,11 +16,11 @@
             </div>
         </div>
     </div>
-    <div class="project-super-container">
+    <div class="project-outer-super-container">
         <div class="skill-header" (click)="toggleHiddenProject(); getProjects()">
             <p>{{ '{' }}{{ '{' }}  Projects  {{ '}' }}{{ '}' }}</p>
         </div>
-        <div *ngIf="!projectHidden">
+        <div *ngIf="!projectHidden" class="project-super-container">
             <div *ngFor="let _project of PROJECTS">
                 <app-project [project]="_project"></app-project>
             </div>
