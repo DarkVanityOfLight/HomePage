@@ -1,5 +1,11 @@
 [
-    { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
+    {
+        "text": "this is some test text blalalalalalalalalalalalbalalakalalalalalalalalalal, and some more blalalalalalalalalalalalalalalalalalalalalalthis is some test text blalalalalalalalalalalalbalalakalalalalalalalalalal, and some more blalalalalalalalalalalalalalalalalalalalala",
+        "title":"NotHeelo",
+        "imgPath": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Placeholder_no_text.svg",
+        "gtihubLink": "",
+        "tags": ["Tag1", "Tag2", "Tag3"]
+    },
     { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
     { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
     { "text": "Hello", "title":"Heelo", "imgPath": "", "gtihubLink": ""},
