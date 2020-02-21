@@ -8,6 +8,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { SkillComponent } from './skill/skill.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectComponent } from './project/project.component';
+import { CommonThingsModule } from '../common/common-things.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ProjectComponent } from './project/project.component';
 
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonThingsModule
   ],
   exports: [
     ContactMeComponent,

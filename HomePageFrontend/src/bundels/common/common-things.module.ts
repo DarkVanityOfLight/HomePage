@@ -16,6 +16,7 @@ import { LinkButtonComponent } from './link-button/link-button.component';
   exports: [
     HeaderComponent,
     FooterComponent,
+    LinkButtonComponent
   ]
 })
 export class CommonThingsModule { }
