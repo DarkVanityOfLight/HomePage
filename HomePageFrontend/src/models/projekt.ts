@@ -5,4 +5,5 @@ export class ProjectModel {
     imgPath: string;
     githubLink: string;
     hostPath?: string;
+    tags: string[];
 }
