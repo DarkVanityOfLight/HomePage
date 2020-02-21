@@ -20,21 +20,6 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.getImageProperties();
-    this.getUserProperties();
-    this.startImageResizing();
-    this.calculateNewImageHeight();
-  }
-
-  startImageResizing(): void{
-    this.scaleRatio = this.imgWidth / this.imgHeight;
-    window.onresize = () =>{
-      this.getUserProperties();
-      this.calculateNewImageHeight();
-    }
-  }
-
-  calculateNewImageHeight(): void{
-    this.scaledImgHeight = this.imgHeight * this.scaleRatio;
   }
 
   getImageProperties(): void{
@@ -48,11 +33,25 @@ export class QuoteComponent implements OnInit {
   setImgProperties(properties: number[]): void{
     this.imgHeight = properties[0];
     this.imgWidth = properties[1];
+    this.getUserProperties();
   }
 
   getUserProperties(): void{
     this.userWidth = window.screen.width;
     this.userHeight = window.screen.height;
+    this.startImageResizing();
+  }
+
+  startImageResizing(): void{
+    this.scaleRatio = this.imgWidth / this.imgHeight;
+    window.onresize = () =>{
+      this.getUserProperties();
+      this.calculateNewImageHeight();
+    }
+  }
+
+  calculateNewImageHeight(): void{
+    this.scaledImgHeight = this.imgHeight * this.scaleRatio;
   }
 
 }
