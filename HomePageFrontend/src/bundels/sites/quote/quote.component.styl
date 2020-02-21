@@ -3,11 +3,15 @@ white = rgba(239, 249, 240, 1)
 skyBlue = rgba(146, 220, 229, 1)
 marineBlue = rgba(21, 50, 67, 1)
 grey = rgba(49, 62, 80, 1)
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap')
 
 .quote-container
-    width: 100%;
+    width: calc(100% - 3px);
     background-size: cover;
     background-position: center top;
+    border-style: solid 
+    border-color: grey
+    border-width: 3px
 
 .incer
     width: 100%
@@ -23,4 +27,5 @@ grey = rgba(49, 62, 80, 1)
     width: fit-content
 
 .quote-text-container p
-    color: white
+    color: mix( white, skyBlue)
+    font-family: 'Exo 2'
