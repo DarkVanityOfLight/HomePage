@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { callbackify } from 'util';
 
 @Component({
   selector: 'app-quote',
@@ -22,12 +23,9 @@ export class QuoteComponent implements OnInit {
     this.getUserProperties();
     this.startImageResizing();
     this.calculateNewImageHeight();
-
   }
 
-  startImageResizing() {
-    alert(this.imgWidth)
-    alert(this.imgWidth)
+  startImageResizing(): void{
     this.scaleRatio = this.imgWidth / this.imgHeight;
     window.onresize = () =>{
       this.getUserProperties();
@@ -35,20 +33,24 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  calculateNewImageHeight() {
+  calculateNewImageHeight(): void{
     this.scaledImgHeight = this.imgHeight * this.scaleRatio;
   }
 
-  getImageProperties() {
+  getImageProperties(): void{
     const img = new Image();
     img.onload = () => {
-      this.imgHeight = img.height;
-      this.imgWidth = img.width;
+      this.setImgProperties([img.height, img.width]);
     };
     img.src = this.bgPath;
   }
 
-  getUserProperties() {
+  setImgProperties(properties: number[]): void{
+    this.imgHeight = properties[0];
+    this.imgWidth = properties[1];
+  }
+
+  getUserProperties(): void{
     this.userWidth = window.screen.width;
     this.userHeight = window.screen.height;
   }
