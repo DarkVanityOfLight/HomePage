@@ -9,49 +9,51 @@ import { callbackify } from 'util';
 export class QuoteComponent implements OnInit {
   @Input() bgPath: string;
   @Input() quote: string;
-  private imgWidth: number;
-  private imgHeight: number;
-  private userWidth: number;
-  private userHeight: number;
-  scaledImgHeight: number;
-  scaleRatio: number;
+
+  private imgScale: number;
+  private _userWidth: number;
+
+  public scaledImgHeight: number;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.getImageProperties();
+    this.startResizing();
   }
 
-  getImageProperties(): void{
-    const img = new Image();
-    img.onload = () => {
-      this.setImgProperties([img.height, img.width]);
-    };
-    img.src = this.bgPath;
-  }
-
-  setImgProperties(properties: number[]): void{
-    this.imgHeight = properties[0];
-    this.imgWidth = properties[1];
-    this.getUserProperties();
-  }
-
-  getUserProperties(): void{
-    this.userWidth = window.screen.width;
-    this.userHeight = window.screen.height;
-    this.startImageResizing();
-  }
-
-  startImageResizing(): void{
-    this.scaleRatio = this.imgWidth / this.imgHeight;
-    window.onresize = () =>{
-      this.getUserProperties();
-      this.calculateNewImageHeight();
+  startResizing(){
+    this.getScale();
+    window.onresize = () => {
+      this.setuserWidth(window.innerWidth);
+      this.setScaledImgHeight();
     }
   }
 
-  calculateNewImageHeight(): void{
-    this.scaledImgHeight = this.imgHeight * this.scaleRatio;
+  getScale(){
+    const img = new Image();
+    img.onload = () => {
+      this.setScale([img.width, img.height]);
+      const userWidth = window.innerWidth;
+      this.setScaledImgHeight(userWidth);
+
+    }
+    img.src = this.bgPath;
+  }
+
+  setScale(imgProperties: number[]){
+    this.imgScale = imgProperties[1] / imgProperties[0];
+  }
+
+ setScaledImgHeight(userWidth?: number){
+   if (userWidth == undefined){
+      this.scaledImgHeight = this.imgScale * this._userWidth;
+    } else {
+      this.scaledImgHeight = this.imgScale * userWidth;
+    }
+  }
+
+  setuserWidth(width: number){
+    this._userWidth = width;
   }
 
 }
