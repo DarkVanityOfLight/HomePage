@@ -11,11 +11,16 @@
         </div>
         <div class="bottom-row">
             <div class="tag-container">
-                <p>Tag</p>
+                <div *ngFor="let tag of project.tags" class="single-tag-container">
+                    <p>{{ tag }}/</p>
+                </div>
             </div>
             <div class="spacer"></div>
             <div class="project-button-container">
                 <app-link-button [title]="'GitHub'" [link]="project.githubLink"></app-link-button>
+                <div *ngIf="project.hostPath != undefined">
+                    <app-link-button [title]="'Visit it'" [link]="project.hostPath"></app-link-button>
+                </div>
             </div>
         </div>
     </div>
