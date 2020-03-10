@@ -1,1 +1,24 @@
-<p>about-me-side-bar works!</p>
+<div class="about-me-side-container">
+    
+    <div class="name-container">
+        <p>Name: {{ aboutMeData.name }}</p>
+    </div>
+
+    <div class="place-info-container">
+        <p>Addresse: {{ aboutMeData.address }} {{ aboutMeData.place }} ({{ aboutMeData.country }})</p>
+    </div>
+
+    <div class="others-container">
+        <div *ngFor="let entry of aboutMeData.others.entries()">
+            <div class="others-wrapper">
+                <p> {{ entry[0] }}: {{ entry[1] }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="github-container">
+        <app-link-button [title]="'GitHub'" [link]="aboutMeData.github"></app-link-button>
+    </div>
+
+
+</div>
