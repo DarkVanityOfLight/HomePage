@@ -11,7 +11,7 @@ export class ProjectService {
   private projectUrl: string;
 
   constructor(private http: HttpClient) { 
-    this.projectUrl = 'http://192.168.12.68:8000/projects';
+    this.projectUrl = 'http://localhost:8000/projects';
   }
 
   get PROJECTS(): Observable<ProjectModel[]>{
