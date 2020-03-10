@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutMeService } from 'src/services/about-me/about-me.service';
+import { AboutMeModel } from 'src/models/about-me';
 
 @Component({
   selector: 'app-about-me',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.styl']
 })
 export class AboutMeComponent implements OnInit {
+  aboutMeData: AboutMeModel;
 
-  constructor() { }
+  constructor(private aboutMeService: AboutMeService) { }
 
   ngOnInit(): void {
   }
 
+
+  getAboutMe(){
+    this.aboutMeService.ABOUT_ME.subscribe(data => this.aboutMeData = data);
+  }
 }
