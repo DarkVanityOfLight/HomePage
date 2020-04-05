@@ -7,7 +7,7 @@ import { StartComponent } from './start/start.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SkillComponent } from './skill/skill.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjectComponent } from './project/project.component';
+import { ProjectComponent } from './start/project/project.component'
 import { CommonThingsModule } from '../common/common-things.module';
 import { AboutMeSideBarComponent } from './about-me/about-me-side-bar/about-me-side-bar.component';
 import { AboutMeMainContainerComponent } from './about-me/about-me-main-container/about-me-main-container.component';
