@@ -45,12 +45,12 @@ CORS(app)
 
 @app.route("/skills")
 def skill_api_endpoint():
-    return json.dumps(getSkillInfo())
+    return json.dumps(get_skill_info())
 
 
 @app.route("/projects")
 def project_api_endpoint():
-    return json.dumps(getProjectInfo())
+    return json.dumps(get_project_info())
 
 
 @app.route("/about-me")
