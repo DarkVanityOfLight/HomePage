@@ -9,7 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, LinkButtonComponent],
+  declarations: [HeaderComponent, FooterComponent, LinkButtonComponent, QuoteComponent],
   imports: [
     CommonModule,
     RouterModule
