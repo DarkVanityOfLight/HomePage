@@ -9,6 +9,7 @@ import { AboutMeModel } from 'src/models/about-me';
 })
 export class AboutMeComponent implements OnInit {
   aboutMeData: AboutMeModel;
+  
 
   constructor(private aboutMeService: AboutMeService) { }
 
