@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LinkButtonComponent } from './link-button/link-button.component';
+import { QuoteComponent } from './quote/quote.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LinkButtonComponent } from './link-button/link-button.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    LinkButtonComponent
+    LinkButtonComponent,
+    QuoteComponent,
   ]
 })
 export class CommonThingsModule { }
