@@ -5,7 +5,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { StartComponent } from './start/start.component';
 import { QuoteComponent } from './quote/quote.component';
-import { SkillComponent } from './skill/skill.component';
+import { SkillComponent } from './start/skill/skill.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectComponent } from './start/project/project.component'
 import { CommonThingsModule } from '../common/common-things.module';
