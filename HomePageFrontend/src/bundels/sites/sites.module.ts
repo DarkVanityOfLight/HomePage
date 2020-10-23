@@ -9,6 +9,7 @@ import { SkillComponent } from './skill/skill.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectComponent } from './project/project.component';
 import { CommonThingsModule } from '../common/common-things.module';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CommonThingsModule } from '../common/common-things.module';
     StartComponent,
     QuoteComponent,
     SkillComponent,
-    ProjectComponent
+    ProjectComponent,
+    MainComponent
   ],
 
   imports: [
